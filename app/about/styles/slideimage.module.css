@@ -1,0 +1,32 @@
+.container {
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.container img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    height: 300px;
+    width: 300px;
+  }
+}

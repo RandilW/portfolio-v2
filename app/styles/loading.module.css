@@ -1,0 +1,23 @@
+.loading_container {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  left: 0;
+  z-index: 999;
+  font-size: 2rem;
+}
+
+.loading_container p {
+  position: absolute;
+  top: 60vh;
+}
+
+@media (min-width: 768px) {
+  .loading_container {
+    font-size: 3rem;
+  }
+}

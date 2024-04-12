@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.3rem 1.85rem;
+  width: 100%;
+}
+
+.hamburger_container {
+  position: fixed;
+  right: 1.85rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 99px;
+  display: grid;
+  align-content: center;
+  place-items: center;
+  gap: 0.25rem;
+  z-index: 101;
+  transition: 0.2s background-color linear, 0.2s transform linear;
+}
+
+.hamburger_container:hover {
+  cursor: pointer;
+}
+
+.cross_icon {
+  display: block;
+  height: 1px;
+  width: 1.25rem;
+  border-radius: 6.125rem;
+  background-color: var(--primary-color);
+}
+
+.close_hamburger {
+  gap: 0;
+  transition: 0.2s all linear;
+  background-color: var(--popup-color);
+}
+
+.close_hamburger span {
+  transform: rotate(45deg);
+  transition: 0.2s transform linear;
+}
+
+.close_hamburger span:last-child {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -1;
+}
+
+.nav_links_container {
+  display: none;
+}
+
+.nav_links_container a {
+  position: relative;
+}
+
+.nav_links_container a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.nav_links_container a:hover::after,
+.nav_links_container a:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (min-width: 414px) and (max-width: 767px) {
+  .pb_logo {
+    height: 30px;
+    width: 40px;
+  }
+
+  .hamburger_container {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 3rem 3.125rem;
+  }
+
+  .hamburger_container {
+    height: 3.5rem;
+    width: 3.5rem;
+    right: 3.125rem;
+  }
+
+  .pb_logo {
+    height: 35px;
+    width: 45px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    padding: 3rem 4rem;
+  }
+
+  .pb_logo {
+    height: 50px;
+    width: 40px;
+  }
+
+  .hamburger_container {
+    display: none;
+  }
+
+  .nav_links_container {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .nav_links_container a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 3rem 4rem;
+  }
+
+  .pb_logo {
+    height: 50px;
+    width: 40px;
+  }
+
+  .hamburger_container {
+    display: none;
+  }
+
+  .nav_links_container {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .nav_links_container a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+}
+
+@media (min-width: 1919px) {
+  .container {
+    padding: 3rem 7rem;
+  }
+
+  .pb_logo {
+    height: 60px;
+    width: 50px;
+  }
+
+  .nav_links_container a {
+    font-size: 1.5rem;
+  }
+}

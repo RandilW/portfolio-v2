@@ -1,0 +1,177 @@
+.main {
+  overflow-x: hidden;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 1.25rem;
+  margin: 2rem 0 1.85rem 1.85rem;
+}
+
+.services_container {
+  padding: 3rem 0 0 0;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  border-width: 1px 0;
+  position: relative;
+}
+
+.services_container:nth-child(3),
+.services_container:nth-child(4) {
+  border-top-width: 0;
+}
+
+.services_header {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  padding: 0 1.85rem;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.btn {
+  height: 1.25rem;
+  width: 1.25rem;
+  display: inline-block;
+  position: relative;
+}
+
+.btn,
+.title {
+  cursor: pointer;
+}
+
+.plus_icon {
+  height: 2px;
+  width: 70%;
+  border-radius: 99px;
+  background-color: var(--secondary-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.plus_icon:last-child {
+  transform: rotate(-90deg);
+}
+
+.btn_rotate .plus_icon:last-child {
+  transform: rotate(0deg);
+}
+
+.services_content {
+  padding: 1.5rem 1.85rem;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.is_active {
+  grid-template-rows: 1fr;
+}
+
+.services_content span {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .heading {
+    font-size: 2rem;
+    margin: 2.3rem 3.125rem;
+  }
+
+  .services_header {
+    padding: 0 3.125rem;
+  }
+
+  .services_content {
+    padding: 1.5rem 3.125rem;
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .heading {
+    font-size: 2rem;
+    margin: 3rem 4rem;
+  }
+
+  .services_header {
+    padding: 0 4rem;
+  }
+
+  .services_content {
+    padding: 1.5rem 4rem;
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 2rem;
+    margin: 3rem 10rem;
+  }
+
+  .services_header {
+    padding: 0 10rem;
+  }
+
+  .services_content {
+    padding: 1.5rem 10rem;
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .services_header,
+  .services_content,
+  .heading_container {
+    width: 1700px;
+    margin: auto;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .services_content {
+    font-size: 1.75rem;
+  }
+}

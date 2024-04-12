@@ -1,0 +1,39 @@
+.custom_cursor_style {
+  visibility: hidden; /* to hide for mobile devices */
+  background-color: var(--primary-color);
+  border-radius: 99px;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 998;
+
+  mix-blend-mode: difference;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.custom_cursor_style span {
+  transition: opacity 0.5s ease;
+}
+
+.custom_cursor_style:not([data-type=""]) > span {
+  opacity: 1;
+}
+
+.no_mix_blend {
+  mix-blend-mode: normal;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+@media (min-width: 1024px) {
+  .custom_cursor_style {
+    visibility: visible;
+  }
+}
