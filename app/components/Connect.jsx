@@ -174,8 +174,8 @@ const Connect = () => {
               <section className={styles.connect_links_container}>
                 <AnimatedButton>
                   <a
-                      href="mailto:hello@pavanbhaskar.com"
-                      target="_blank"
+                      href="/"
+                      target=""
                       rel="noopener noreferrer"
                       className={styles.connect_links}
                   >

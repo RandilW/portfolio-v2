@@ -13,11 +13,11 @@ const imageSrc = (title) => {
   switch (title) {
     case "Exploratory Data Analysis":
       return savingspreeMockup;
-    case "Mr.Lawyer":
+    case "AggieFunds":
       return mrLawyerMockup;
-    case "Marriage Template":
+    case "ProfMatch":
       return marriageTemplateMockup;
-    case "Avis Tailors":
+    case "Client Design Project":
       return avisMockup;
   }
 };

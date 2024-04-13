@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Work - Pavan Bhaskar",
+  title: "Work - Randil Wijayananda",
 };
 
 export default function WorkLayout({ children }) {

@@ -11,6 +11,7 @@ import shadesGeneratorMockup from "../../public/mockups/shades-generator/shades-
 import avisTailorsMockup from "../../public/mockups/avis-tailors/avistailors_mockup.jpeg";
 import mrLawyerMockup from "../../public/mockups/mr-lawyer/mrlawyer_mockup.jpeg";
 import marriageTemplateMockup from "../../public/mockups/marriage-template/marriage-template-mockup.png";
+import todoMockup from "../../public/mockups/todo/todo_mockup.png"
 
 const Work = () => {
   const [loading, setLoading] = useState(true);
@@ -62,14 +63,16 @@ const Work = () => {
     switch (title) {
       case "Exploratory Data Analysis":
         return savingspreeMockup;
-      case "Shades Generator":
+      case "Airbnb Clone":
         return shadesGeneratorMockup;
-      case "Avis Tailors":
+      case "Client Design Project":
         return avisTailorsMockup;
-      case "Mr.Lawyer":
+      case "AggieFunds":
         return mrLawyerMockup;
-      case "Marriage Template":
+      case "ProfMatch":
         return marriageTemplateMockup;
+      case "ToDo":
+        return todoMockup;
     }
   };
 

@@ -20,9 +20,9 @@ const projects = [
   },
   {
     index: 2,
-    id: "marriage-template",
-    title: "Marriage Template",
-    summary: "A website to showcase all the wedding celebrations.",
+    id: "profmatch",
+    title: "ProfMatch",
+    summary: "A platform for personalized professor recommendations based on student preferences.",
     description:
       "Marriage template is a fully customizable website where you can showcase your wedding information",
     services: ["Design", "Development"],
@@ -38,8 +38,8 @@ const projects = [
   },
   {
     index: 3,
-    id: "shades-generator",
-    title: "Shades Generator",
+    id: "airbnb-clone",
+    title: "Airbnb Clone",
     summary: "Generate beautiful color shades.",
     services: ["Development"],
     builtOn: ["Nextjs", "ChakraUI"],
@@ -55,8 +55,27 @@ const projects = [
   },
   {
     index: 4,
-    id: "avis-tailors",
-    title: "Avis Tailors",
+    id: "todo",
+    title: "ToDo",
+    summary: "A place where people & lawyers meet each other",
+    description:
+        "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
+    services: ["Design", "Development"],
+    builtOn: ["HTML", "CSS", "Javascript"],
+    imgSrc: "/mockups/todo/todo_mockup.png",
+    imageGallery: [
+      "/mockups/mr-lawyer/mr-lawyer1.png",
+      "/mockups/mr-lawyer/mr-lawyer2.png",
+      "/mockups/mr-lawyer/mr-lawyer3.png",
+      "/mockups/mr-lawyer/mr-lawyer4.png",
+    ],
+    siteUrl: "https://mrlawyerfirm.web.app/",
+    featured: false,
+  },
+  {
+    index: 5,
+    id: "client-design-project",
+    title: "Client Design Project",
     summary: "Custom web design & development for a tailoring brand.",
     description:
       "Avis Tailors is a tailoring brand. They focus on providing well tailored clothes, the website and design is reflection of those attributes.",
@@ -72,9 +91,9 @@ const projects = [
     featured: true,
   },
   {
-    index: 5,
-    id: "mr-lawyer",
-    title: "Mr.Lawyer",
+    index: 6,
+    id: "aggiefunds",
+    title: "AggieFunds",
     summary: "A place where people & lawyers meet each other",
     description:
       "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
