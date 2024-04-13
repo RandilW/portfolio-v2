@@ -16,26 +16,27 @@ const customFont = localFont({
   ],
 });
 
-const title = "Pavan Bhaskar - Developer & Designer";
+const title = "Randil Wijayananda - Portfolio";
 const description =
-  "Portfolio website of developer & designer Pavan Bhaskar. With passion towards development & design enables me to create create super projects.";
+  "Portfolio | Hello, I'm Randil. Student, Developer, and Designer, with a interest in Data Engineering, Computer Science, and Web Design.";
 
 export const metadata = {
   title,
   description,
-  metadataBase: new URL("https://pavanbhaskar.vercel.app"),
+  metadataBase: new URL("https://www.randilw.com"),
   keywords: [
-    "pavan",
-    "bhaskar",
+    "randil",
+    "wijayananda",
     "creative developer",
     "designer",
-    "pavanbhaskar",
+    "randil wijayananda",
+    "portfolio",
   ],
   openGraph: {
     title: title,
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.svg",
         width: 800,
         height: 600,
       },
