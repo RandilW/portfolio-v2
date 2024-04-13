@@ -11,7 +11,8 @@ import shadesGeneratorMockup from "../../public/mockups/shades-generator/shades-
 import avisTailorsMockup from "../../public/mockups/avis-tailors/avistailors_mockup.jpeg";
 import mrLawyerMockup from "../../public/mockups/mr-lawyer/mrlawyer_mockup.jpeg";
 import marriageTemplateMockup from "../../public/mockups/marriage-template/marriage-template-mockup.png";
-import todoMockup from "../../public/mockups/todo/todo_mockup.png"
+import todoMockup from "../../public/mockups/todo/todo_mockup.png";
+import revtubeMockup from "../../public/mockups/revtube/revtube_mockup.png";
 
 const Work = () => {
   const [loading, setLoading] = useState(true);
@@ -73,6 +74,8 @@ const Work = () => {
         return marriageTemplateMockup;
       case "ToDo":
         return todoMockup;
+      case "RevTube":
+        return revtubeMockup;
     }
   };
 

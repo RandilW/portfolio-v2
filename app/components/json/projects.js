@@ -109,6 +109,25 @@ const projects = [
     siteUrl: "https://mrlawyerfirm.web.app/",
     featured: true,
   },
+  {
+    index: 7,
+    id: "revtube",
+    title: "RevTube",
+    summary: "A place where people & lawyers meet each other",
+    description:
+        "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
+    services: ["Design", "Development"],
+    builtOn: ["HTML", "CSS", "Javascript"],
+    imgSrc: "/mockups/revtube/revtube_mockup.png",
+    imageGallery: [
+      "/mockups/mr-lawyer/mr-lawyer1.png",
+      "/mockups/mr-lawyer/mr-lawyer2.png",
+      "/mockups/mr-lawyer/mr-lawyer3.png",
+      "/mockups/mr-lawyer/mr-lawyer4.png",
+    ],
+    siteUrl: "https://mrlawyerfirm.web.app/",
+    featured: false,
+  },
 ];
 
 export default projects;
