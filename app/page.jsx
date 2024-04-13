@@ -71,7 +71,7 @@ const Home = () => {
         <ProjectsSection ref={ProjectsSectionRef} />
         <MyStack />
         <Experience />
-        <Testimonials />
+        {/*<Testimonials />*/}
       </main>
     </>
   );

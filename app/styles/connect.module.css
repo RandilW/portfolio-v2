@@ -152,6 +152,7 @@
 @media (min-width: 1200px) {
   .parent_container {
     padding: 3rem 10rem;
+    padding-top: 8rem;
   }
 
   .heading {
