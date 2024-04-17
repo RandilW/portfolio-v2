@@ -1,19 +1,19 @@
 const socialLinks = [
   {
     name: "Github",
-    url: "https://github.com/pavanbhaskardev",
-  },
-  {
-    name: "Dribbble",
-    url: "https://dribbble.com/Pavan_Challa",
+    url: "https://github.com/RandilW",
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/pavan-bhaskar-challa-4a2774244/",
+    url: "https://www.linkedin.com/in/randil-wijayananda/",
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/pavan_bhaskar_ch/",
+    url: "https://www.instagram.com/randil_w/",
+  },
+  {
+    name: "Google Dev",
+    url: "https://g.dev/randil",
   },
 ];
 

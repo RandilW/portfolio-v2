@@ -127,13 +127,8 @@ const Connect = ({ connectSectionRef }) => {
           <p className={styles.heading}>Connect</p>
 
           <div className={styles.flexCol}>
-            <form className={styles.form} method="post" action="https://dennissnellenberg.com/contact"
+            <form className={styles.form} method="post" action=""
                   enctype="multipart/form-data" novalidate="">
-              {/*<div className={styles.websiteField}>*/}
-              {/*  <label className={styles.label} htmlFor="tel">Phone Number</label>*/}
-              {/*  <input className={styles.field} type="text" id="form-tel" name="tel" tabIndex="-1"*/}
-              {/*         onChange={handleChange} value={formState.tel}/>*/}
-              {/*</div>*/}
               <div className={styles.formCol}>
                 <h5>01</h5>
                 <label className={styles.label} htmlFor="name">What's your name?</label>
@@ -146,18 +141,6 @@ const Connect = ({ connectSectionRef }) => {
                 <input className={styles.field} type="email" id="form-email" name="email" required
                        placeholder="john@doe.com *" onChange={handleChange} value={formState.email}/>
               </div>
-              {/*<div className={styles.formCol}>*/}
-              {/*  <h5>03</h5>*/}
-              {/*  <label className={styles.label} htmlFor="company">What's the name of your organization?</label>*/}
-              {/*  <input className={styles.field} type="text" id="form-company" name="company" required*/}
-              {/*         placeholder="John & Doe ®" onChange={handleChange} value={formState.company}/>*/}
-              {/*</div>*/}
-              {/*<div className={styles.formCol}>*/}
-              {/*  <h5>04</h5>*/}
-              {/*  <label className={styles.label} htmlFor="service">What services are you looking for?</label>*/}
-              {/*  <input className={styles.field} type="text" id="form-service" name="service" required*/}
-              {/*         placeholder="Web Design, Web Development ..." onChange={handleChange} value={formState.service}/>*/}
-              {/*</div>*/}
               <div className={styles.formCol}>
                 <h5>03</h5>
                 <label className={styles.label} htmlFor="message">Your message</label>
@@ -189,29 +172,6 @@ const Connect = ({ connectSectionRef }) => {
 
 
         <footer>
-          <section className={styles.connect_links_container}>
-            {/*<AnimatedButton>*/}
-            {/*  <a*/}
-            {/*      href="mailto:hello@pavanbhaskar.com"*/}
-            {/*      target="_blank"*/}
-            {/*      rel="noopener noreferrer"*/}
-            {/*      className={styles.connect_links}*/}
-            {/*  >*/}
-            {/*    hello@pavanbhaskar.com*/}
-            {/*  </a>*/}
-            {/*</AnimatedButton>*/}
-            {/*<AnimatedButton>*/}
-            {/*  <a*/}
-            {/*      href="tel:+919440777253"*/}
-            {/*      target="_blank"*/}
-            {/*      rel="noopener noreferrer"*/}
-            {/*      className={styles.connect_links}*/}
-            {/*  >*/}
-            {/*    +91 9440777253*/}
-            {/*  </a>*/}
-            {/*</AnimatedButton>*/}
-          </section>
-
           <section className={styles.footer_details_container}>
             <div className={styles.footer_moredetails_container}>
               <div className={styles.footer_meta_container}>
