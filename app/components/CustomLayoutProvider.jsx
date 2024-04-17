@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import { usePathname } from "next/navigation";
 import Navbar from "./Navbar";
@@ -8,6 +8,8 @@ import CustomCursor from "./CustomCursor";
 
 const CustomLayoutProvider = ({ children }) => {
   const pathname = usePathname();
+
+  const connectSectionRef = useRef(null);
 
   useEffect(() => {
     const lenisInstance = new Lenis({
@@ -38,11 +40,11 @@ const CustomLayoutProvider = ({ children }) => {
   return (
     <>
       <CustomCursor />
-      <Navbar />
+      <Navbar connectSectionRef={connectSectionRef} />
       {children}
 
       {/* hiding connect section when we're in not-found page */}
-      {!pathname.includes("lost") && <Connect />}
+      {!pathname.includes("lost") && <Connect connectSectionRef={connectSectionRef} />}
     </>
   );
 };

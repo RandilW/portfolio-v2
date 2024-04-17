@@ -29,6 +29,7 @@ const words = [
   "బాగున్నారా",
   "नमस्ते",
   "Hello",
+  "ආයුබෝවන්",
   "Bonjour",
   "Ciao",
   "Olà",

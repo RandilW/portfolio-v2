@@ -40,7 +40,8 @@ const FriendlyCaptcha = ({ setCaptchaSolved }) => {
   );
 }
 
-const Connect = () => {
+const Connect = ({ connectSectionRef }) => {
+
   const [captchaSolved, setCaptchaSolved] = useState(false);
 
   const d = new Date();
@@ -122,7 +123,7 @@ const Connect = () => {
 
   return (
 
-        <section className={styles.parent_container} data-bgcolor="#eeeeee" data-textcolor="#181818">
+        <section ref={connectSectionRef} className={styles.parent_container} data-bgcolor="#eeeeee" data-textcolor="#181818">
           <p className={styles.heading}>Connect</p>
 
           <div className={styles.flexCol}>

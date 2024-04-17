@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -7,12 +7,24 @@ import Link from "next/link";
 import styles from "../styles/navbar.module.css";
 import HamBurgerMenu from "./HamBurgerMenu";
 import navLinks from "./json/navLinks";
+import useSmoothScroll from "app/components/commonComponents/useSmoothScroll.js";
 
-const Navbar = () => {
+const Navbar = ({ connectSectionRef }) => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  return (
+    const { scrollTo } = useSmoothScroll();
+
+    const scrollToConnectSection = () => {
+        const connectSection = connectSectionRef.current;
+
+        if (connectSection) {
+            // Use the scrollTo function to scroll to the Connect section
+            scrollTo(connectSection);
+        }
+    };
+
+    return (
     <header className={styles.container}>
       <Link href="/" scroll={false}>
         <Image
@@ -49,6 +61,14 @@ const Navbar = () => {
           if (label === "Home") {
             return null;
           }
+
+            if (label === "Connect") {
+                return (
+                    <a onClick={scrollToConnectSection} key={label}>
+                        {pathname === path ? `• ${label}` : label}
+                    </a>
+                );
+            }
 
           return (
             <Link href={path} key={label} target={target} scroll={false}>
