@@ -148,7 +148,7 @@ const Connect = ({ connectSectionRef }) => {
       formRef.current.submit();
     }
 
-    fetch('https://script.google.com/macros/s/AKfycbxZ6QdYsR2wVyceayqXRSxynfTPbzhv7Mo_BbBH1L342hHItMzsOVsuHOa4ecYjJ46M/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwQHLUma22jhalTsmex1IMvkSk76eJxlhFu-0wxW07_Tsa3_P0DhVo6Bl28coJLeC-5/exec', {
       method: 'POST',
       body: new FormData(event.target),
     }).then(() => {
