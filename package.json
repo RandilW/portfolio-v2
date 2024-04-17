@@ -11,6 +11,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.19",
     "@vercel/speed-insights": "^1.0.2",
+    "axios": "^1.6.8",
     "framer-motion": "^10.15.0",
     "friendly-challenge": "^0.9.15",
     "gsap": "^3.12.2",

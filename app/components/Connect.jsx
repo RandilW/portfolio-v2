@@ -81,11 +81,8 @@ const Connect = ({ connectSectionRef }) => {
   } CDT`;
 
   const [formState, setFormState] = useState({
-    tel: "",
     name: "",
     email: "",
-    company: "",
-    service: "",
     message: ""
   });
 
@@ -96,12 +93,55 @@ const Connect = ({ connectSectionRef }) => {
     });
   };
 
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const validateForm = () => {
+    let errors = {};
+
+    if (formState.name.trim() === "") {
+      errors.name = "Please enter a valid name";
+    }
+
+    if (!/^.+@.+..+$/.test(formState.email)) {
+      errors.email = "Please enter a valid email address";
+    }
+
+    if (formState.message.length < 3 || formState.message.length > 3000) {
+      errors.message = "Please enter a text between 3 and 3000 characters";
+    }
+
+    setFormErrors(errors);
+
+    return Object.keys(errors).length === 0;
+  };
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const formRef = useRef(null);
+
+  const [captchaError, setCaptchaError] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!this.state.captchaSolved) {
-      console.log('Please solve the captcha before submitting the form.');
+    if (!validateForm()) {
       return;
+    }
+
+    if (!captchaSolved) {
+      console.log('Please solve the captcha before submitting the form.');
+      setCaptchaError(true);
+      return;
+    }
+
+    setCaptchaError(false);
+
+    if (formRef.current) {
+      formRef.current.submit();
     }
 
     fetch('https://script.google.com/macros/s/AKfycbxZ6QdYsR2wVyceayqXRSxynfTPbzhv7Mo_BbBH1L342hHItMzsOVsuHOa4ecYjJ46M/exec', {
@@ -109,13 +149,11 @@ const Connect = ({ connectSectionRef }) => {
       body: new FormData(event.target),
     }).then(() => {
       console.log('Form submitted');
+      setIsSubmitted(true);
       // Reset the form state
       setFormState({
-        tel: "",
         name: "",
         email: "",
-        company: "",
-        service: "",
         message: ""
       });
     });
@@ -127,19 +165,23 @@ const Connect = ({ connectSectionRef }) => {
           <p className={styles.heading}>Connect</p>
 
           <div className={styles.flexCol}>
-            <form className={styles.form} method="post" action=""
-                  enctype="multipart/form-data" novalidate="">
+            <form id="myForm" className={styles.form} method="post" action=""
+                  enctype="multipart/form-data" novalidate="" onSubmit={handleSubmit}>
               <div className={styles.formCol}>
                 <h5>01</h5>
                 <label className={styles.label} htmlFor="name">What's your name?</label>
                 <input className={styles.field} type="text" id="form-name" name="name" required placeholder="John Doe *"
                        onChange={handleChange} value={formState.name}/>
+                {formErrors.name &&
+                    <div className={`${styles.alert} ${styles.alertError}`}><span>{formErrors.name}</span></div>}
               </div>
               <div className={styles.formCol}>
                 <h5>02</h5>
                 <label className={styles.label} htmlFor="email">What's your email?</label>
                 <input className={styles.field} type="email" id="form-email" name="email" required
                        placeholder="john@doe.com *" onChange={handleChange} value={formState.email}/>
+                {formErrors.email &&
+                    <div className={`${styles.alert} ${styles.alertError}`}><span>{formErrors.email}</span></div>}
               </div>
               <div className={styles.formCol}>
                 <h5>03</h5>
@@ -147,34 +189,38 @@ const Connect = ({ connectSectionRef }) => {
                 <textarea className={styles.field} type="text" id="form-message" name="message" rows="8" required
                           placeholder="Enter your message here ... *" onChange={handleChange}
                           value={formState.message}></textarea>
+                {formErrors.message &&
+                    <div className={`${styles.alert} ${styles.alertError}`}><span>{formErrors.message}</span></div>}
               </div>
               <div className={styles.formCol}>
                 <h5>06</h5>
                 <label className={styles.label} htmlFor="message">Are you a human?</label>
                 <div className={styles.cap}>
-                  <FriendlyCaptcha/>
+                  <FriendlyCaptcha setCaptchaSolved={setCaptchaSolved}/>
                 </div>
+                {captchaError && <div className={`${styles.alert} ${styles.alertError}`}><span>Please solve the captcha before submitting the form.</span></div>}
+              </div>
+              <div className={styles.successCol}>
+                {isSubmitted && <div className={`${styles.success}`}><span>Success. Message sent!</span></div>}
               </div>
               <section className={styles.connect_links_container}>
                 <AnimatedButton>
-                  <a
-                      href="/"
-                      target=""
-                      rel="noopener noreferrer"
-                      className={styles.connect_links}
-                  >
-                    submit
-                  </a>
+                  <button type="submit" className={styles.connect_links} style={{zIndex: 100, background: 'transparent', border: 'none', cursor: 'pointer'}}>
+                    Submit
+                  </button>
                 </AnimatedButton>
+
+
               </section>
             </form>
+
           </div>
 
 
-        <footer>
+          <footer>
           <section className={styles.footer_details_container}>
-            <div className={styles.footer_moredetails_container}>
-              <div className={styles.footer_meta_container}>
+              <div className={styles.footer_moredetails_container}>
+                <div className={styles.footer_meta_container}>
                 <span>Version</span>
                 <p>© 2024 </p>
               </div>

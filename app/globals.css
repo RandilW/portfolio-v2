@@ -76,7 +76,8 @@ body:hover > .custom_cursor {
   opacity: 1 !important;
   fill: rgba(24, 24, 24, 0.49) !important;
   margin-right: 15px !important;
-  stroke: none !important;
+  stroke: rgba(133, 133, 133, 1) !important;
+  /*stroke: none !important;*/
 }
 
 .dark.frc-captcha {
@@ -88,10 +89,18 @@ body:hover > .custom_cursor {
   /*border-width: 1px;*/
 }
 
-.dark .frc-progress {
-  background-color: rgba(24, 24, 24, 0.49) !important;
-  color: rgba(24, 24, 24, 0.49) !important;
+body .dark .frc-progress::-webkit-progress-bar {
+  background-color: rgba(133, 133, 133, 1);
 }
+
+body .dark .frc-progress::-webkit-progress-value {
+  background-color: rgb(189, 189, 189);
+}
+
+body .dark .frc-progress::-moz-progress-bar {
+  background-color: rgba(133, 133, 133, 1);
+}
+
 
 .dark.frc-captcha button {
   background-color: var(--primary-color) !important;
@@ -104,3 +113,4 @@ body:hover > .custom_cursor {
   height: 150%;
   border-radius: 5px;
 }
+
