@@ -125,6 +125,8 @@ const Connect = ({ connectSectionRef }) => {
 
   const [captchaError, setCaptchaError] = useState(false);
 
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -140,6 +142,8 @@ const Connect = ({ connectSectionRef }) => {
 
     setCaptchaError(false);
 
+    setLoading(true);
+
     if (formRef.current) {
       formRef.current.submit();
     }
@@ -150,6 +154,7 @@ const Connect = ({ connectSectionRef }) => {
     }).then(() => {
       console.log('Form submitted');
       setIsSubmitted(true);
+      setLoading(false);
       // Reset the form state
       setFormState({
         name: "",
@@ -206,7 +211,7 @@ const Connect = ({ connectSectionRef }) => {
               <section className={styles.connect_links_container}>
                 <AnimatedButton>
                   <button type="submit" className={styles.connect_links} style={{zIndex: 100, background: 'transparent', border: 'none', cursor: 'pointer'}}>
-                    Submit
+                    {loading ? 'Submitting...' : 'Submit'}
                   </button>
                 </AnimatedButton>
 
