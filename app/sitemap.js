@@ -5,7 +5,7 @@ const projectsSiteMap = projects.map((project) => {
   const { id } = project;
 
   return {
-    url: `https://pavanbhaskar.com/work/${id}`,
+    url: `https://randilw.com/work/${id}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
@@ -15,19 +15,19 @@ const projectsSiteMap = projects.map((project) => {
 export default function sitemap() {
   return [
     {
-      url: "https://pavanbhaskar.com",
+      url: "https://randilw.com",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
     },
     {
-      url: "https://pavanbhaskar.com/work",
+      url: "https://randilw.com/work",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://pavanbhaskar.com/about",
+      url: "https://randilw.com/about",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
