@@ -15,14 +15,13 @@ const HeroSection = () => {
   }, []);
 
   const sentence1 =
-    "It all started with a dream of creating a website to my father, there on i started exploring the web.";
+    "As a Computer Science student, I have developed skills in programming languages such as Python, Java, Swift, React, HTML, CSS, JavaScript, C++, and in algorithm development, data structures, and software engineering.";
 
   const sentence2 =
-    "With each project, I push my work to new horizons & learn new things. Always putting quality first.";
+    "I have participated in coding programs and am involved in the coding and data science clubs at my college. I am always seeking new opportunities to learn and grow. Connect with me if you’re looking for a passionate and dedicated Computer Science student eager to contribute to challenging projects.";
 
   const heroSectionText =
       "Hello, I'm Randil Wijayananda. A Data Engineering student at Texas A&M University with a interest in Computer Science and Web Design";
-    // "Hi, I’m Pavan Bhaskar. A frontend developer & UI designer living in Hyderabad.";
 
   const heroSectionTextAnimation = {
     initial: {
