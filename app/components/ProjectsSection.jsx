@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/projectsection.module.css";
 import projects from "./json/projects";
-import savingspreeMockup from "../../public/mockups/savingspree/savingspree_mockup.jpeg";
+import savingspreeMockup from "../../public/mockups/savingspree/savingspree_mockup.png";
 import mrLawyerMockup from "../../public/mockups/mr-lawyer/mrlawyer_mockup.jpeg";
 import marriageTemplateMockup from "../../public/mockups/marriage-template/marriage-template-mockup.png";
 import avisMockup from "../../public/mockups/avis-tailors/avistailors_mockup.jpeg";

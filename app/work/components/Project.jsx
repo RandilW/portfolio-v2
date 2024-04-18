@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import styles from "../styles/project.module.css";
@@ -13,6 +13,7 @@ const Project = ({ details }) => {
   const imageRef = useRef(null);
   const inView = useInView(containerRef, { once: true, threshold: 0.5 });
   const isImageInView = useInView(imageRef, { once: true, threshold: 0.5 });
+  const [chart, setChart] = useState(null);
 
   const {
     index,
@@ -53,6 +54,12 @@ const Project = ({ details }) => {
       },
     },
   };
+
+  useEffect(() => {
+    if (details.renderChart) {
+      details.renderChart().then(setChart);
+    }
+  }, [details]);
 
   return (
     <section className={styles.container}>
@@ -105,7 +112,7 @@ const Project = ({ details }) => {
 
       <div>
         <div className={styles.details_container}>
-          <p>Services</p>
+          <p>Project Type</p>
           <span>
             {services.map((details, index) => {
               if (index === services.length - 1) {
@@ -117,7 +124,7 @@ const Project = ({ details }) => {
         </div>
 
         <div className={styles.details_container}>
-          <p>Built on</p>
+          <p>Tools Used</p>
           <span>
             {builtOn.map((details, index) => {
               if (index === builtOn.length - 1) {
@@ -128,6 +135,8 @@ const Project = ({ details }) => {
           </span>
         </div>
       </div>
+
+      {chart}
 
       <ImageGallery imageGallery={imageGallery} />
 

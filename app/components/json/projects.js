@@ -1,3 +1,6 @@
+import fetchDataFromCSV from '../../../app/work/fetchDataFromCSV';
+import MyChart from '../../../app/work/MyChart';
+
 const projects = [
   {
     index: 1,
@@ -6,6 +9,10 @@ const projects = [
     summary: "Comprehensive data analysis to identify optimal location for a new Mediterranean restaurant.",
     description:
       "Conducted comprehensive data analysis on various datasets, analyzing over 100,000 data points to identify optimal location for a new Mediterranean restaurant.",
+    renderChart: async () => {
+      const { data, labels } = await fetchDataFromCSV();
+      return <MyChart data={data} labels={labels} />;
+    },
     services: ["Design", "Development"],
     builtOn: ["Nextjs", "Firebase", "ChakraUI"],
     imgSrc: "/mockups/savingspree/savingspree_mockup.jpeg",
@@ -24,9 +31,9 @@ const projects = [
     title: "ProfMatch",
     summary: "A platform for personalized professor recommendations based on student preferences.",
     description:
-      "Marriage template is a fully customizable website where you can showcase your wedding information",
+      "\"Aggie ProfMatch\", a project that secured second place at the 2023 Howdy Hack, is a student-centric platform offering precise data on professors and courses, with a user-friendly interface and personalized ratings based on AEFIS evaluations..",
     services: ["Design", "Development"],
-    builtOn: ["Nextjs", "Framer Motion"],
+    builtOn: ["Next.js", "Tailwind CSS", "Axios", "Flask", "Python", "Pandas"],
     imgSrc: "/mockups/marriage-template/marriage-template-mockup.png",
     imageGallery: [
       "/mockups/marriage-template/marriage-template1.png",
@@ -45,7 +52,7 @@ const projects = [
     builtOn: ["Nextjs", "ChakraUI"],
     description:
       "Shades Generator is a webapp which generates beautiful color shades for your designs.",
-    imgSrc: "/mockups/shades-generator/shades-generator_mockup.jpeg",
+    imgSrc: "/mockups/shades-generator/shades-generator_mockup.png",
     imageGallery: [
       "/mockups/shades-generator/shades-generator1.png",
       "/mockups/shades-generator/shades-generator2.png",
