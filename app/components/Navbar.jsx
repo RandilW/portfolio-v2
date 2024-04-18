@@ -64,7 +64,7 @@ const Navbar = ({ connectSectionRef }) => {
 
             if (label === "Connect") {
                 return (
-                    <a onClick={scrollToConnectSection} key={label}>
+                    <a onClick={scrollToConnectSection} key={label} style={{cursor: 'pointer'}}>
                         {pathname === path ? `• ${label}` : label}
                     </a>
                 );
