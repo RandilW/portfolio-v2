@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "next-sitemap"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.19",
@@ -22,5 +23,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^10.0.4"
+  },
+  "devDependencies": {
+    "next-sitemap": "^4.2.3"
   }
 }
