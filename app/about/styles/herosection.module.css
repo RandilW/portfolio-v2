@@ -4,7 +4,7 @@
 
 .hero_section_container {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 2rem;
 }
@@ -80,7 +80,7 @@
   .hero_section_container {
     place-items: end;
     gap: 0.5rem;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
   }
 
   .heading {
@@ -95,7 +95,7 @@
 
   .content {
     font-size: 1.5rem;
-    width: 580px;
+    width: 800px;
     margin: 2rem 0 0 0;
   }
 }

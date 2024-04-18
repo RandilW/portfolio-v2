@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/slideimage.module.css";
-import profilePic from "../../../public/profile_pic.jpeg";
+import profilePic from "../../../public/profile_pic.gif";
 
 const ImageSlide = ({ src }) => {
   const [isInView, setIsInView] = useState(false);
@@ -17,11 +17,11 @@ const ImageSlide = ({ src }) => {
     <section ref={containerRef} className={styles.container}>
       <Image
         src={profilePic}
-        alt="pavan_bhaskar_pic"
-        style={{ opacity: isInView ? 0.88 : 0 }}
+        alt="Randil Wijayananda"
+        style={{ opacity: isInView ? 1 : 0 }}
         fill
         sizes="(max-width: 374px) 235px, (min-width: 768px) 335px, (min-width: 768px) 992px, (min-width: 1920px) 435px"
-        placeholder="blur"
+        // placeholder="blur"
       />
       <div
         style={{

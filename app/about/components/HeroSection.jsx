@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles/herosection.module.css";
-import profliePic from "../../../public/profile_pic.jpeg";
+import profliePic from "../../../public/profile_pic.gif";
 import ImageSlide from "./ImageSlide";
 
 const HeroSection = () => {
