@@ -26,14 +26,13 @@ const opacity = {
 };
 
 const words = [
-  "బాగున్నారా",
-  "नमस्ते",
   "Hello",
-  "ආයුබෝවන්",
   "Bonjour",
   "Ciao",
+  "ආයුබෝවන්",
   "Olà",
   "やあ",
+  "مرحبًا",
   "Hallå",
   "Guten tag",
   "Hallo",
