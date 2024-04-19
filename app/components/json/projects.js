@@ -15,7 +15,7 @@ const projects = [
     },
     services: ["Design", "Development"],
     builtOn: ["Nextjs", "Firebase", "ChakraUI"],
-    imgSrc: "/mockups/savingspree/savingspree_mockup.jpeg",
+    imgSrc: "/mockups/savingspree/savingspree_mockup.png",
     imageGallery: [
       "/mockups/savingspree/savingspree1.png",
       "/mockups/savingspree/savingspree2.png",
