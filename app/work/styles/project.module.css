@@ -24,6 +24,43 @@
   flex-wrap: wrap;
 }
 
+.chart_description {
+  font-size: 1.2rem;  /* adjust as needed */
+  color: #333;  /* adjust as needed */
+  margin-top: 1rem;  /* adjust as needed */
+  padding-top: 2.5rem;
+  margin-bottom: 2rem;  /* adjust as needed */
+  text-align: left;  /* left-justify the text */
+  max-width: 600px;  /* adjust as needed */
+  margin-left: auto;  /* center the text block */
+  margin-right: auto;  /* center the text block */
+}
+
+.social_links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.social_links a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+
+.social_links a:hover::after,
+.social_links a:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .redirect_btn {
   display: flex;
   gap: 0.25rem;

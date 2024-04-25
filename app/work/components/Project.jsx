@@ -89,7 +89,7 @@ const Project = ({ details }) => {
           }}
         >
           <div className={styles.project_image}>
-            <Image src={imgSrc} alt={`${title} pic`} fill />
+            <Image src={imgSrc} alt={`${title} - Project`} fill />
           </div>
         </motion.div>
 

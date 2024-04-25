@@ -5,20 +5,17 @@ import { Chart, BarController, BarElement, CategoryScale, LinearScale } from 'ch
 
 Chart.register(BarController, BarElement, CategoryScale, LinearScale);
 
-const MyChart = ({ data, labels }) => {
+const MyChart = ({ data, labels, chartLabel, borderRadius, xStepSize, yStepSize }) => {
     const chartRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
-            // Set `isVisible` to `true` if the observed element is in viewport
             setIsVisible(entries[0].isIntersecting);
         });
 
-        // Start observing the chart container
         observer.observe(chartRef.current);
 
-        // Clean up on unmount
         return () => observer.disconnect();
     }, []);
 
@@ -29,11 +26,12 @@ const MyChart = ({ data, labels }) => {
                 data: {
                     labels: labels,
                     datasets: [{
-                        label: 'My Dataset',
+                        label: chartLabel,
                         data: data,
-                        backgroundColor: 'rgba(75, 192, 192, 0.2)',  // set color of the bars
-                        borderColor: 'rgba(75, 192, 192, 1)',  // set color of the bar borders
-                        borderWidth: 1,  // set width of the bar borders
+                        backgroundColor: '#545d4f',
+                        borderColor: '#dbdad4',
+                        borderWidth: 0,
+                        borderRadius: borderRadius,
                     }],
                 },
                 options: {
@@ -42,38 +40,41 @@ const MyChart = ({ data, labels }) => {
                             type: 'category',
                             title: {
                                 display: true,
-                                text: 'Zip Code'  // label for x-axis
+                                text: 'Score'
                             },
                             grid: {
-                                display: false  // remove gridlines
+                                display: false
+                            },
+                            ticks: {
+                                stepSize: xStepSize,
                             }
                         },
                         y: {
                             type: 'linear',
                             title: {
                                 display: true,
-                                text: 'Number of Restaurants'  // label for y-axis
+                                text: 'Number of Restaurants'
                             },
                             grid: {
-                                display: false  // remove gridlines
+                                display: false
                             },
                             ticks: {
-                                stepSize: 1,  // set step size to 1
-                                precision: 0  // no decimal places
+                                stepSize: yStepSize,
+                                precision: 0
                             }
                         },
                     },
                     animation: {
-                        duration: 2000, // general animation time
-                        delay: context => context.dataIndex * 300, // add delay between each bar
+                        duration: 2000,
+                        delay: context => context.dataIndex * 300,
                     },
                     hover: {
-                        animationDuration: 1000, // duration of animations when hovering an item
+                        animationDuration: 1000,
                     },
-                    responsiveAnimationDuration: 1000, // animation duration after a resize
+                    responsiveAnimationDuration: 1000,
                     plugins: {
                         legend: {
-                            display: false  // hide legend
+                            display: false
                         }
                     }
                 },
@@ -83,7 +84,7 @@ const MyChart = ({ data, labels }) => {
     }, [isVisible, chartRef, data, labels]);
 
     return (
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', paddingTop: '250px', paddingLeft: '50px', paddingRight: '50px', marginBottom: '-300px'}}>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', paddingTop: '0px', paddingLeft: '50px', paddingRight: '50px', marginBottom: '-450px'}}>
             <div style={{width: '750px', height: '800px'}}>
                 <canvas ref={chartRef} />
             </div>
