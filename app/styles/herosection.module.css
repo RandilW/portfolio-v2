@@ -29,7 +29,7 @@
 .sliding_text p {
   position: relative;
   color: var(--secondary-color);
-  font-size: 7rem;
+  font-size: 4rem;
   padding-right: 2rem;
   font-weight: 450;
   left: 80%;
@@ -105,7 +105,7 @@
   }
 
   .sliding_text p {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .cta_container {
@@ -116,6 +116,10 @@
   .cta_text {
     height: 100px;
     width: 100px;
+  }
+
+  .wave {
+    height: 50px;
   }
 }
 
@@ -137,7 +141,7 @@
   }
 
   .sliding_text p {
-    font-size: 12vw;
+    font-size: 7rem;
   }
 
   .main_container {
@@ -153,6 +157,10 @@
     height: 130px;
     width: 130px;
   }
+
+  .wave {
+    height: 50px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -163,7 +171,7 @@
   }
 
   .sliding_text p {
-    font-size: 9vw;
+    font-size: 7rem;
   }
 
   .sliding_text_container {
@@ -183,6 +191,11 @@
     height: 115px;
     width: 115px;
   }
+
+  .wave {
+    height: 100px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -194,7 +207,7 @@
 
   .sliding_text p {
     /*font-size: 16vw;*/
-    font-size: 8vw;
+    font-size: 7rem;
   }
 
   .sliding_text_container {
@@ -214,6 +227,11 @@
   .cta_text {
     height: 115px;
     width: 115px;
+  }
+
+  .wave {
+    height: 100px !important;
+    margin-left: 0px !important;
   }
 }
 
@@ -237,6 +255,15 @@
     height: 9rem;
     width: 9rem;
   }
+
+  .sliding_text p {
+    font-size: 8vw;
+  }
+
+  .wave {
+    height: 100px !important;
+    margin-left: 0px !important;
+  }
 }
 
 
@@ -246,6 +273,8 @@
   animation-iteration-count: infinite;  /* Never stop waving :) */
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
+  height: 50px;
+  margin-left: -30px;
 }
 
 @keyframes wave-animation {

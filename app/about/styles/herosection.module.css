@@ -19,7 +19,7 @@
 }
 
 .image_container {
-  grid-column-start: 2;
+  grid-column-start: 1;
 }
 
 .content {
@@ -42,6 +42,10 @@
     font-size: 1.5rem;
     width: 60vw;
   }
+
+  .image_container {
+    grid-column-start: 1;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -62,7 +66,7 @@
   }
 
   .image_container {
-    justify-self: end;
+    grid-column-start: 1;
   }
 
   .content {
@@ -90,7 +94,7 @@
   }
 
   .image_container {
-    justify-self: end;
+    grid-column-start: 2;
   }
 
   .content {
@@ -113,5 +117,9 @@
   .content {
     /* width: 40vw; */
     font-size: 1.75rem;
+  }
+
+  .image_container {
+    grid-column-start: 2;
   }
 }
