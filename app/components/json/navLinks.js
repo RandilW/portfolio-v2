@@ -19,6 +19,11 @@ const navLinks = [
     path: "",
     target: "",
   },
+  {
+    label: "Portfolio v1",
+    path: "https://v1.randilw.com/",
+    target: "_blank",
+  },
 ];
 
 export default navLinks;

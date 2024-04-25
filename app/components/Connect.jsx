@@ -44,41 +44,61 @@ const Connect = ({ connectSectionRef }) => {
 
   const [captchaSolved, setCaptchaSolved] = useState(false);
 
-  const d = new Date();
-  const offSetTime = d.getTimezoneOffset();
-  const cdtOffset = 5 * 60;
-  const totalOffset = offSetTime - cdtOffset;
-  const cdtTime = new Date(d.getTime() + totalOffset * 60000);
+  const calculateTime = () => {
+    const d = new Date();
+    const offSetTime = d.getTimezoneOffset();
+    const cdtOffset = 5 * 60;
+    const totalOffset = offSetTime - cdtOffset;
+    const cdtTime = new Date(d.getTime() + totalOffset * 60000);
 
-  const amOrPm = () => {
-    const hours = cdtTime.getHours();
-    if (hours >= 12) {
-      return "PM";
-    }
-    return "AM";
+    const amOrPm = () => {
+      const hours = cdtTime.getHours();
+      if (hours >= 12) {
+        return "PM";
+      }
+      return "AM";
+    };
+
+    const hours = () => {
+      const hrs = cdtTime.getHours();
+      if (hrs <= 9) {
+        return `0${hrs}`;
+      } else {
+        return hrs;
+      }
+    };
+
+    const minutes = () => {
+      const min = cdtTime.getMinutes();
+      if (min <= 9) {
+        return `0${min}`;
+      } else {
+        return min;
+      }
+    };
+
+    const seconds = () => {
+      const sec = cdtTime.getSeconds();
+      if (sec <= 9) {
+        return `0${sec}`;
+      } else {
+        return sec;
+      }
+    };
+
+    return `${cdtTime.getHours() > 12 ? hours() - 12 : hours()}:${
+        minutes()}:${seconds()} ${amOrPm()} CDT`;
   };
 
-  const hours = () => {
-    const hrs = cdtTime.getHours();
-    if (hrs <= 9) {
-      return `0${hrs}`;
-    } else {
-      return hrs;
-    }
-  };
+  const [time, setTime] = useState(calculateTime());
 
-  const minutes = () => {
-    const min = cdtTime.getMinutes();
-    if (min <= 9) {
-      return `0${min}`;
-    } else {
-      return min;
-    }
-  };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(calculateTime());
+    }, 1000);
 
-  const formattedTime = `${cdtTime.getHours() > 12 ? hours() - 12 : hours()}:${
-      minutes() + ` ${amOrPm()}`
-  } CDT`;
+    return () => clearInterval(timer);
+  }, []);
 
   const [formState, setFormState] = useState({
     name: "",
@@ -232,7 +252,7 @@ const Connect = ({ connectSectionRef }) => {
 
               <div className={styles.footer_meta_container}>
                 <span>Local Time</span>
-                <p>{formattedTime}</p>
+                <p>{time}</p>
               </div>
             </div>
 
