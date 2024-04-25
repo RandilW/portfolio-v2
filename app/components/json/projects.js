@@ -54,7 +54,7 @@ const projects = [
           </>
       );
     },
-    services: ["Design", "Development"],
+    services: ["Data Analysis", "Development"],
     builtOn: ["Nextjs", "Firebase", "ChakraUI"],
     imgSrc: "/mockups/savingspree/savingspree_mockup.png",
     imageGallery: [
