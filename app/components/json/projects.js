@@ -47,7 +47,7 @@ const projects = [
     index: 3,
     id: "airbnb-clone",
     title: "Airbnb Clone",
-    summary: "Generate beautiful color shades.",
+    summary: "Project.",
     services: ["Development"],
     builtOn: ["Nextjs", "ChakraUI"],
     description:
@@ -66,7 +66,7 @@ const projects = [
     title: "ToDo",
     summary: "A place where people & lawyers meet each other",
     description:
-        "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
+        "Project",
     services: ["Design", "Development"],
     builtOn: ["HTML", "CSS", "Javascript"],
     imgSrc: "/mockups/todo/todo_mockup.png",
@@ -85,7 +85,7 @@ const projects = [
     title: "Client Design Project",
     summary: "Custom web design & development for a tailoring brand.",
     description:
-      "Avis Tailors is a tailoring brand. They focus on providing well tailored clothes, the website and design is reflection of those attributes.",
+      "Project",
     services: ["Design", "Development"],
     builtOn: ["TailwindCSS", "HTML"],
     imgSrc: "/mockups/avis-tailors/avistailors_mockup.jpeg",
@@ -101,7 +101,7 @@ const projects = [
     index: 6,
     id: "aggiefunds",
     title: "AggieFunds",
-    summary: "A place where people & lawyers meet each other",
+    summary: "Projectr",
     description:
       "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
     services: ["Design", "Development"],
@@ -120,7 +120,7 @@ const projects = [
     index: 7,
     id: "revtube",
     title: "RevTube",
-    summary: "A place where people & lawyers meet each other",
+    summary: "Project",
     description:
         "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
     services: ["Design", "Development"],
