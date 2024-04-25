@@ -51,7 +51,7 @@ const projects = [
     services: ["Development"],
     builtOn: ["Nextjs", "ChakraUI"],
     description:
-      "Shades Generator is a webapp which generates beautiful color shades for your designs.",
+      "Project.",
     imgSrc: "/mockups/shades-generator/shades-generator_mockup.png",
     imageGallery: [
       "/mockups/shades-generator/shades-generator1.png",
@@ -64,7 +64,7 @@ const projects = [
     index: 4,
     id: "todo",
     title: "ToDo",
-    summary: "A place where people & lawyers meet each other",
+    summary: "Project.",
     description:
         "Project",
     services: ["Design", "Development"],
@@ -83,7 +83,7 @@ const projects = [
     index: 5,
     id: "client-design-project",
     title: "Client Design Project",
-    summary: "Custom web design & development for a tailoring brand.",
+    summary: "Project.",
     description:
       "Project",
     services: ["Design", "Development"],
@@ -103,7 +103,7 @@ const projects = [
     title: "AggieFunds",
     summary: "Projectr",
     description:
-      "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
+      "Project.",
     services: ["Design", "Development"],
     builtOn: ["HTML", "CSS", "Javascript"],
     imgSrc: "/mockups/mr-lawyer/mrlawyer_mockup.jpeg",
@@ -122,7 +122,7 @@ const projects = [
     title: "RevTube",
     summary: "Project",
     description:
-        "Mr.Lawyer is a consultancy, where people meet experienced lawyer near them & lawyers can connect to their clients.",
+        "Project.",
     services: ["Design", "Development"],
     builtOn: ["HTML", "CSS", "Javascript"],
     imgSrc: "/mockups/revtube/revtube_mockup.png",
