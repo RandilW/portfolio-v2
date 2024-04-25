@@ -72,13 +72,13 @@ const projects = [
         "\"Aggie ProfMatch\", a project that secured second place at the 2023 Howdy Hack, is a student-centric platform offering precise data on professors and courses, with a user-friendly interface and personalized ratings based on AEFIS evaluations..",
     services: ["Design", "Development"],
     builtOn: ["Next.js", "Tailwind CSS", "Axios", "Flask", "Python", "Pandas"],
-    imgSrc: "/mockups/marriage-template/marriage-template-mockup.png",
+    imgSrc: "/mockups/marriage-template/profmatch1.png",
     imageGallery: [
-      "/mockups/marriage-template/marriage-template1.png",
-      "/mockups/marriage-template/marriage-template2.png",
-      "/mockups/marriage-template/marriage-template3.png",
+      "/mockups/marriage-template/profmatch2.png",
+      "/mockups/marriage-template/profmatch3.png",
+      "/mockups/marriage-template/profmatch4.png",
     ],
-    siteUrl: "https://marriage-template.netlify.app",
+    siteUrl: "https://www.aggieprofmatch.com/",
     featured: true,
   },
   {

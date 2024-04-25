@@ -6,7 +6,7 @@ import styles from "../styles/projectsection.module.css";
 import projects from "./json/projects";
 import savingspreeMockup from "../../public/mockups/savingspree/savingspree_mockup.png";
 import mrLawyerMockup from "../../public/mockups/mr-lawyer/mrlawyer_mockup.jpeg";
-import marriageTemplateMockup from "../../public/mockups/marriage-template/marriage-template-mockup.png";
+import profmatchMockup from "@/public/mockups/profmatch/profmatch1.png";
 import avisMockup from "../../public/mockups/avis-tailors/avistailors_mockup.jpeg";
 
 const imageSrc = (title) => {
@@ -16,7 +16,7 @@ const imageSrc = (title) => {
     case "AggieFunds":
       return mrLawyerMockup;
     case "ProfMatch":
-      return marriageTemplateMockup;
+      return profmatchMockup;
     case "Client Design Project":
       return avisMockup;
   }

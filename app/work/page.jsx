@@ -10,7 +10,7 @@ import savingspreeMockup from "../../public/mockups/savingspree/savingspree_mock
 import shadesGeneratorMockup from "../../public/mockups/shades-generator/shades-generator_mockup.png";
 import avisTailorsMockup from "../../public/mockups/avis-tailors/avistailors_mockup.jpeg";
 import mrLawyerMockup from "../../public/mockups/mr-lawyer/mrlawyer_mockup.jpeg";
-import marriageTemplateMockup from "../../public/mockups/marriage-template/marriage-template-mockup.png";
+import marriageTemplateMockup from "@/public/mockups/profmatch/profmatch1.png";
 import todoMockup from "../../public/mockups/todo/todo_mockup.png";
 import revtubeMockup from "../../public/mockups/revtube/revtube_mockup.png";
 
