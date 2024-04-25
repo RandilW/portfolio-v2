@@ -6,13 +6,13 @@ import CommonLoader from "../components/commonComponents/CommonLoader";
 import styles from "./styles/work.module.css";
 import projects from "../components/json/projects";
 import Image from "next/image";
-import savingspreeMockup from "@/public/mockups/eda/savingspree_mockup.png";
-import shadesGeneratorMockup from "@/public/mockups/airbnb/airbnb.png";
-import avisTailorsMockup from "@/public/mockups/client-design-project/avistailors_mockup.jpeg";
-import mrLawyerMockup from "@/public/mockups/todo/mrlawyer_mockup.jpeg";
-import marriageTemplateMockup from "@/public/mockups/profmatch/profmatch1.png";
-import todoMockup from "../../public/mockups/todo/todo_mockup.png";
-import revtubeMockup from "../../public/mockups/revtube/revtube_mockup.png";
+import edaMockup from "@/public/mockups/eda/eda.png";
+import airbnbMockup from "@/public/mockups/airbnb/airbnb.png";
+import clientDesignProjectMockup from "@/public/mockups/client-design-project/client-design-project.png";
+import todoMockup from "@/public/mockups/todo/todo.png";
+import profmatchMockup from "@/public/mockups/profmatch/profmatch1.png";
+import aggiefundsMockup from "../../public/mockups/aggiefunds/aggiefunds.png";
+import revtubeMockup from "../../public/mockups/revtube/revtube.png";
 
 const Work = () => {
   const [loading, setLoading] = useState(true);
@@ -63,15 +63,15 @@ const Work = () => {
   const imgSrc = (title) => {
     switch (title) {
       case "Exploratory Data Analysis":
-        return savingspreeMockup;
+        return edaMockup;
       case "Airbnb Clone":
-        return shadesGeneratorMockup;
+        return airbnbMockup;
       case "Client Design Project":
-        return avisTailorsMockup;
+        return clientDesignProjectMockup;
       case "AggieFunds":
-        return mrLawyerMockup;
+        return aggiefundsMockup;
       case "ProfMatch":
-        return marriageTemplateMockup;
+        return profmatchMockup;
       case "ToDo":
         return todoMockup;
       case "RevTube":
