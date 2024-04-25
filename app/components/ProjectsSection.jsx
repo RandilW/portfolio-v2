@@ -4,21 +4,21 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/projectsection.module.css";
 import projects from "./json/projects";
-import savingspreeMockup from "../../public/mockups/savingspree/savingspree_mockup.png";
-import mrLawyerMockup from "../../public/mockups/mr-lawyer/mrlawyer_mockup.jpeg";
+import edaMockup from "@/public/mockups/eda/eda.png";
+import aggieFundsMockup from "@/public/mockups/aggiefunds/aggiefunds.png";
 import profmatchMockup from "@/public/mockups/profmatch/profmatch1.png";
-import avisMockup from "../../public/mockups/avis-tailors/avistailors_mockup.jpeg";
+import clientDesignProjectMockup from "@/public/mockups/client-design-project/client-design-project.png";
 
 const imageSrc = (title) => {
   switch (title) {
     case "Exploratory Data Analysis":
-      return savingspreeMockup;
+      return edaMockup;
     case "AggieFunds":
-      return mrLawyerMockup;
+      return aggieFundsMockup;
     case "ProfMatch":
       return profmatchMockup;
     case "Client Design Project":
-      return avisMockup;
+      return clientDesignProjectMockup;
   }
 };
 
