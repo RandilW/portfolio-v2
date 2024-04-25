@@ -58,10 +58,7 @@ const projects = [
     builtOn: ["Nextjs", "Firebase", "ChakraUI"],
     imgSrc: "/mockups/savingspree/savingspree_mockup.png",
     imageGallery: [
-      "/mockups/savingspree/savingspree1.png",
-      "/mockups/savingspree/savingspree2.png",
-      "/mockups/savingspree/savingspree3.png",
-      "/mockups/savingspree/savingspree4.png",
+
     ],
     siteUrl: "https://github.com/RandilW/ECEN-360-501/tree/main/Assignments/Assignment%201",
     featured: true,
