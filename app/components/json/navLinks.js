@@ -20,7 +20,7 @@ const navLinks = [
     target: "",
   },
   {
-    label: "Portfolio v1",
+    label: "Portfolio V1",
     path: "https://v1.randilw.com/",
     target: "_blank",
   },
