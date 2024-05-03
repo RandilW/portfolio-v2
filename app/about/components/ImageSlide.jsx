@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/slideimage.module.css";
-import profilePic from "../../../public/profile_pic.gif";
+import profilePic from "../../../public/profile_pic.png";
 
 const ImageSlide = ({ src }) => {
   const [isInView, setIsInView] = useState(false);
