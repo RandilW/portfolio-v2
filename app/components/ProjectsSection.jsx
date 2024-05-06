@@ -8,6 +8,7 @@ import edaMockup from "@/public/mockups/eda/eda.png";
 import aggieFundsMockup from "@/public/mockups/aggiefunds/aggiefunds.png";
 import profmatchMockup from "@/public/mockups/profmatch/profmatch1.png";
 import clientDesignProjectMockup from "@/public/mockups/client-design-project/client-design-project.png";
+import chromecastDashboardMockup from "@/public/mockups/chromecast-dashboard/chromecast-dashboard.png";
 
 const imageSrc = (title) => {
   switch (title) {
@@ -19,6 +20,8 @@ const imageSrc = (title) => {
       return profmatchMockup;
     case "Client Design Project":
       return clientDesignProjectMockup;
+      case "Chromecast Dashboard":
+          return chromecastDashboardMockup;
   }
 };
 

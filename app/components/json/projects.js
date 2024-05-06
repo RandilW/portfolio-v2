@@ -83,19 +83,38 @@ const projects = [
   },
   {
     index: 3,
-    id: "airbnb-clone",
-    title: "Airbnb Clone",
+    id: "client-design-project",
+    title: "Client Design Project",
     summary: "Project",
-    services: ["Development"],
-    builtOn: ["Nextjs", "ChakraUI"],
     description:
         "Project",
-    imgSrc: "/mockups/airbnb/airbnb.png",
+    services: ["Design", "Development"],
+    builtOn: ["TailwindCSS", "HTML"],
+    imgSrc: "/mockups/client-design-project/client-design-project.png",
     imageGallery: [
-      "/mockups/airbnb/airbnb2.png",
-      "/mockups/airbnb/airbnb3.png",
+      "/mockups/client-design-project/client-design-project2.png",
+      "/mockups/client-design-project/client-design-project3.png",
+      "/mockups/client-design-project/client-design-project4.png",
     ],
-    siteUrl: "https://airbnb-clone-randilw.vercel.app/",
+    siteUrl: "https://randilw.github.io/client-design-project/",
+    featured: true,
+  },
+  {
+    index: 5,
+    id: "chromecast-dashboard",
+    title: "Chromecast Dashboard",
+    summary: "A simple dashboard application for Chromecast.",
+    description:
+        "Project",
+    services: ["Design", "Development"],
+    builtOn: ["HTML", "CSS", "Javascript"],
+    imgSrc: "/mockups/chromecast-dashboard/chromecast-dashboard.png",
+    imageGallery: [
+      "/mockups/chromecast-dashboard/chromecast-dashboard2.png",
+      "/mockups/chromecast-dashboard/chromecast-dashboard3.png",
+    ],
+    siteUrl: "https://github.com/RandilW",
+    featured: true,
   },
   {
     index: 4,
@@ -116,24 +135,6 @@ const projects = [
     featured: false,
   },
   {
-    index: 5,
-    id: "client-design-project",
-    title: "Client Design Project",
-    summary: "Project",
-    description:
-      "Project",
-    services: ["Design", "Development"],
-    builtOn: ["TailwindCSS", "HTML"],
-    imgSrc: "/mockups/client-design-project/client-design-project.png",
-    imageGallery: [
-      "/mockups/client-design-project/client-design-project2.png",
-      "/mockups/client-design-project/client-design-project3.png",
-      "/mockups/client-design-project/client-design-project4.png",
-    ],
-    siteUrl: "https://randilw.github.io/client-design-project/",
-    featured: true,
-  },
-  {
     index: 6,
     id: "aggiefunds",
     title: "AggieFunds",
@@ -149,7 +150,7 @@ const projects = [
       "/mockups/aggiefunds/aggiefunds4.png",
     ],
     siteUrl: "https://github.com/aggie-coding-club/CrowdFundingPlatform",
-    featured: true,
+    featured: false,
   },
   {
     index: 7,
@@ -182,6 +183,22 @@ const projects = [
     ],
     siteUrl: "https://randilw.github.io/RSS-Hub/",
     featured: false,
+  },
+  {
+    index: 8,
+    id: "airbnb-clone",
+    title: "Airbnb Clone",
+    summary: "Project",
+    services: ["Development"],
+    builtOn: ["Nextjs", "ChakraUI"],
+    description:
+        "Project",
+    imgSrc: "/mockups/airbnb/airbnb.png",
+    imageGallery: [
+      "/mockups/airbnb/airbnb2.png",
+      "/mockups/airbnb/airbnb3.png",
+    ],
+    siteUrl: "https://airbnb-clone-randilw.vercel.app/",
   },
 ];
 

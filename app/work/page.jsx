@@ -14,6 +14,7 @@ import profmatchMockup from "@/public/mockups/profmatch/profmatch1.png";
 import aggiefundsMockup from "../../public/mockups/aggiefunds/aggiefunds.png";
 import revtubeMockup from "../../public/mockups/revtube/revtube.png";
 import rssHubMockup from "../../public/mockups/rss-hub/rss-hub.png";
+import chromecastDashboardMockup from "../../public/mockups/chromecast-dashboard/chromecast-dashboard.png";
 
 const Work = () => {
   const [loading, setLoading] = useState(true);
@@ -79,6 +80,8 @@ const Work = () => {
         return revtubeMockup;
       case "RSS Hub":
         return rssHubMockup;
+      case "Chromecast Dashboard":
+        return chromecastDashboardMockup;
     }
   };
 
