@@ -85,7 +85,7 @@ const projects = [
     index: 3,
     id: "client-design-project",
     title: "Client Design Project",
-    summary: "Project",
+    summary: "A user-friendly and interactive website for a dog daycare company.",
     description:
         "Project",
     services: ["Design", "Development"],
@@ -120,7 +120,7 @@ const projects = [
     index: 4,
     id: "todo",
     title: "ToDo",
-    summary: "Project",
+    summary: "A To-Do List application with a clean and user-friendly interface.",
     description:
         "Project",
     services: ["Design", "Development"],
@@ -138,7 +138,7 @@ const projects = [
     index: 6,
     id: "aggiefunds",
     title: "AggieFunds",
-    summary: "Project",
+    summary: "A fundraising platform targeted to Texas A&M students, organizations, and alumni.",
     description:
       "Project",
     services: ["Design", "Development"],
@@ -156,7 +156,7 @@ const projects = [
     index: 7,
     id: "revtube",
     title: "RevTube",
-    summary: "Project",
+    summary: "A YouTube-like platform with user authentication and a fully functioning UI.",
     description:
         "Project",
     services: ["Design", "Development"],
@@ -172,7 +172,7 @@ const projects = [
     index: 8,
     id: "rss-hub",
     title: "RSS Hub",
-    summary: "Project",
+    summary: "A RSS reader that provides RSS information as a feed in a simple and user-friendly UI.",
     description:
         "Project",
     services: ["Design", "Development"],
@@ -188,7 +188,7 @@ const projects = [
     index: 8,
     id: "airbnb-clone",
     title: "Airbnb Clone",
-    summary: "Project",
+    summary: "A clone of Airbnb as a personal project to enhance web development skills.",
     services: ["Development"],
     builtOn: ["Nextjs", "ChakraUI"],
     description:
