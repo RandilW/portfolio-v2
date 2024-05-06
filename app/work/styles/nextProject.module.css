@@ -1,5 +1,7 @@
 .project_container {
   margin: 1rem 1.85rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project_image {
@@ -25,21 +27,26 @@
 
 .project_content {
   margin-top: 1rem;
-  display: grid;
-  gap: 0.7rem;
 }
 
 .project_content p {
   font-size: 1.25rem;
+  margin-bottom: 0.8rem; /* Adjust the space below the title */
 }
 
 @media (min-width: 768px) {
   .project_container {
     margin: 2.3rem 3.125rem;
+    flex-direction: row;
   }
 
   .project_image {
     height: 550px;
+    width: 50%;
+  }
+
+  .project_content {
+    width: 50%;
   }
 
   .project_content p {
@@ -53,7 +60,6 @@
 
 @media (min-width: 992px) {
   .project_content {
-    grid-template-columns: repeat(2, 1fr);
     align-items: flex-end;
   }
 
@@ -73,7 +79,12 @@
 }
 
 @media (min-width: 1920px) {
+  .project_content {
+    margin-top: 1rem;
+    padding-left: 2rem; /* Add padding to the left of the content */
+  }
   .project_image {
-    height: 900px;
+    width: 500px;
+    height: 400px;
   }
 }

@@ -140,7 +140,7 @@ const Project = ({ details }) => {
 
       <ImageGallery imageGallery={imageGallery} />
 
-      <p className={styles.heading}>Next Case</p>
+      <p className={styles.heading}>Next Project</p>
       <NextProject details={details} />
     </section>
   );
