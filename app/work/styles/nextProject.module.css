@@ -39,32 +39,27 @@
     margin: 2.3rem 3.125rem;
     flex-direction: row;
   }
-
-  .project_image {
-    height: 550px;
-    width: 50%;
-  }
-
   .project_content {
-    width: 50%;
+    margin-top: 1rem;
+    padding-left: 2rem; /* Add padding to the left of the content */
   }
-
-  .project_content p {
-    font-size: 1.75rem;
-  }
-
-  .project_content span {
-    font-size: 1.25rem;
+  .project_image {
+    width: 500px;
+    height: 400px;
   }
 }
 
 @media (min-width: 992px) {
-  .project_content {
-    align-items: flex-end;
-  }
-
   .project_container {
     margin: 3rem 4rem;
+  }
+  .project_content {
+    margin-top: 1rem;
+    padding-left: 2rem; /* Add padding to the left of the content */
+  }
+  .project_image {
+    width: 500px;
+    height: 400px;
   }
 }
 
@@ -72,9 +67,13 @@
   .project_container {
     margin: 3rem 10rem;
   }
-
+  .project_content {
+    margin-top: 1rem;
+    padding-left: 2rem; /* Add padding to the left of the content */
+  }
   .project_image {
-    height: 900px;
+    width: 500px;
+    height: 400px;
   }
 }
 
