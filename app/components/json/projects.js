@@ -85,11 +85,11 @@ const projects = [
     index: 3,
     id: "airbnb-clone",
     title: "Airbnb Clone",
-    summary: "Project.",
+    summary: "Project",
     services: ["Development"],
     builtOn: ["Nextjs", "ChakraUI"],
     description:
-        "Project.",
+        "Project",
     imgSrc: "/mockups/airbnb/airbnb.png",
     imageGallery: [
       "/mockups/airbnb/airbnb2.png",
@@ -101,7 +101,7 @@ const projects = [
     index: 4,
     id: "todo",
     title: "ToDo",
-    summary: "Project.",
+    summary: "Project",
     description:
         "Project",
     services: ["Design", "Development"],
@@ -119,7 +119,7 @@ const projects = [
     index: 5,
     id: "client-design-project",
     title: "Client Design Project",
-    summary: "Project.",
+    summary: "Project",
     description:
       "Project",
     services: ["Design", "Development"],
@@ -137,9 +137,9 @@ const projects = [
     index: 6,
     id: "aggiefunds",
     title: "AggieFunds",
-    summary: "Projectr",
+    summary: "Project",
     description:
-      "Project.",
+      "Project",
     services: ["Design", "Development"],
     builtOn: ["HTML", "CSS", "Javascript"],
     imgSrc: "/mockups/aggiefunds/aggiefunds.png",
@@ -157,7 +157,7 @@ const projects = [
     title: "RevTube",
     summary: "Project",
     description:
-        "Project.",
+        "Project",
     services: ["Design", "Development"],
     builtOn: ["HTML", "CSS", "Javascript"],
     imgSrc: "/mockups/revtube/revtube.png",
@@ -165,6 +165,22 @@ const projects = [
       "/mockups/revtube/revtube2.png",
     ],
     siteUrl: "https://github.com/aggie-coding-club/RevTube",
+    featured: false,
+  },
+  {
+    index: 8,
+    id: "rss-hub",
+    title: "RSS Hub",
+    summary: "Project",
+    description:
+        "Project",
+    services: ["Design", "Development"],
+    builtOn: ["HTML", "CSS", "Javascript"],
+    imgSrc: "/mockups/rss-hub/rss-hub.png",
+    imageGallery: [
+      "/mockups/rss-hub/rss-hub2.png",
+    ],
+    siteUrl: "https://randilw.github.io/RSS-Hub/",
     featured: false,
   },
 ];
